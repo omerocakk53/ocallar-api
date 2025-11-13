@@ -4,6 +4,7 @@ const userRoute = require('./user.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 const newsRoute = require('./news/news.route');
+const HumanResourceRoute = require('./human-resources/human.resources.route');
 
 const router = express.Router();
 
@@ -19,6 +20,10 @@ const defaultRoutes = [
   {
     path: '/news',
     route: newsRoute,
+  },
+  {
+    path: '/human-resources',
+    route: HumanResourceRoute,
   },
 ];
 
