@@ -54,6 +54,7 @@ if (config.env === 'production') {
 // v1 api routes
 app.use('/v1', routes);
 
+// uploads folder public
 app.use('/uploads', express.static(path.join(__dirname, '../uploads/')));
 
 // send back a 404 error for any unknown api request
