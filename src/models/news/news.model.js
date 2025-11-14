@@ -12,11 +12,6 @@ const newsSchema = new mongoose.Schema(
       required: [true, 'Content is required'],
       trim: true,
     },
-    author: {
-      type: String,
-      required: [true, 'Author is required'],
-      trim: true,
-    },
     image: {
       type: String,
       required: [true, 'Image is required'],

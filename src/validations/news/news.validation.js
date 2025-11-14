@@ -5,15 +5,13 @@ const createNews = {
   body: Joi.object().keys({
     title: Joi.string().required(),
     content: Joi.string().required(),
-    author: Joi.string().required(),
-    image: Joi.string().required(),
+    image: Joi.string(),
   }),
 };
 
 const getNews = {
   query: Joi.object().keys({
     title: Joi.string(),
-    author: Joi.string(),
     sortBy: Joi.string(),
     limit: Joi.number().integer(),
     page: Joi.number().integer(),
@@ -34,7 +32,6 @@ const updateNews = {
     .keys({
       title: Joi.string(),
       content: Joi.string(),
-      author: Joi.string(),
       image: Joi.string(),
     })
     .min(1),
