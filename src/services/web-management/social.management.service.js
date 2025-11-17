@@ -15,7 +15,7 @@ const updateSocial = async (id, body) => {
 };
 
 const deleteSocialById = async (id) => {
-  return Social.findByIdAndRemove(id);
+  return Social.findByIdAndDelete(id);
 };
 
 module.exports = {
