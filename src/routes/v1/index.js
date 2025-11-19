@@ -5,7 +5,7 @@ const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 const newsRoute = require('./news/news.route');
 const HumanResourceRoute = require('./human-resources/human.resources.route');
-const webManagementRoute = require('./web-management/web.management.route');
+const WebManagementRoute = require('./web-management/web.management.route');
 const uploadRoute = require('./upload.route');
 
 const router = express.Router();
@@ -29,7 +29,7 @@ const defaultRoutes = [
   },
   {
     path: '/web-management',
-    route: webManagementRoute,
+    route: WebManagementRoute,
   },
   {
     path: '/upload',
@@ -38,7 +38,6 @@ const defaultRoutes = [
 ];
 
 const devRoutes = [
-  // routes available only in development mode
   {
     path: '/docs',
     route: docsRoute,
